@@ -1,4 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv('menu_items.csv')
-print(df.info())
+df = pd.read_csv('dz.csv')
+print(df)
+
+group = df.groupby('City')['Salary'].mean()
+print(group)
